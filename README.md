@@ -33,20 +33,9 @@ Play against the computer, track your win streaks, celebrate your victories with
 
 ---
 
-## 📂 Project Structure
 
-├── public/
-│ └── index.html
-├── src/
-│ ├── App.js
-│ ├── App.css
-│ └── index.js
-├── output/
-│ └── rpc1.png
-├── package.json
-└── README.md
 
-## 📦 Installation
+
 ## 🛠️ Getting Started
 
 You can create a new React app and add this game manually:
