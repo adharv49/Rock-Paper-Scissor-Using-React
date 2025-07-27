@@ -1,0 +1,254 @@
+/* 🌀 React Default Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* 🎮 Rock Paper Scissors Game Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 40px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.choice-button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #333;
+  font-weight: bold;
+}
+
+.choice-button:hover {
+  transform: scale(1.1);
+}
+
+.choice-button.rock {
+  background-color: #d3d3d3;
+  border-radius: 50%;
+}
+
+.choice-button.paper {
+  background-color: #add8e6;
+  border-radius: 8px;
+}
+
+.choice-button.scissors {
+  background-color: #f8c8dc;
+  border-radius: 16px 4px;
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+.results h2 {
+  margin: 10px 0;
+}
+
+.result-text {
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* 🔁 Animations */
+.animate-result {
+  animation: bounce-fade 0.5s ease;
+}
+
+@keyframes bounce-fade {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 🎨 Result Colors */
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+.draw {
+  color: orange;
+}
+
+/* 🔁 Reset Button */
+.reset-button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #e60000;
+}
+
+/* 🧮 Scoreboard */
+.scoreboard {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffffd0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: left;
+  font-size: 16px;
+  z-index: 100;
+}
+
+.scoreboard h3 {
+  margin: 5px;
+}
+
+/* 🏆 Leaderboard */
+.leaderboard {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ffffffd0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 100;
+}
+
+.leaderboard h3 {
+  margin-top: 0;
+}
+
+.leaderboard ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* 🥇🥈🥉 Rank Styles */
+.rank-1 {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.rank-2 {
+  background-color: silver;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.rank-3 {
+  background-color: #cd7f32; /* bronze */
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choice-button {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .scoreboard,
+  .leaderboard {
+    position: static;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .results h2 {
+    font-size: 18px;
+  }
+
+  .reset-button {
+    width: 80%;
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
